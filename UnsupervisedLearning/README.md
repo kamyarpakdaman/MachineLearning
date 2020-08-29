@@ -1,3 +1,3 @@
 # UnsupervisedLearning
 
-This directory includes models created using Unsupervised Machine Learning.
+This directory includes models created using _Unsupervised Machine Learning_.
