@@ -1,4 +1,4 @@
-# In this program, we will create a K-nearest Neighbors moel to predict the diagnosis label
+# In this program, we will create a K-nearest Neighbors model to predict the diagnosis label
 # for breast cancer tumors.
 
 import numpy as np
