@@ -1,5 +1,7 @@
 # MachineLearning
 
-This repository includes my projects and coding adventures more focused on the field of Machine Learning.
+This repository includes my projects and coding adventures more focused on the field of _Machine Learning_.
 
-_Programming language: Python_
+#### Programming language(s):
+
+- Python
