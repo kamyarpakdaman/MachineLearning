@@ -1,3 +1,3 @@
 # SupervisedLearning
 
-This directory includes models created using Supervised Machine Learning.
+This directory includes models created using _Supervised Machine Learning_.
