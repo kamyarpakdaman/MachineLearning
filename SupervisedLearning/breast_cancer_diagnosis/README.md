@@ -8,7 +8,7 @@ Models used in this program:
 
 Libraries used in this program:
 
-- Pandas
-- NumPy
-- Matplotlib
+- pandas
+- numpy
+- matplotlib
 - train_test_split
