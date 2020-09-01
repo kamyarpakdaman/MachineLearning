@@ -4,6 +4,7 @@ In this program, we create a K-Nearest Neighbors Classification model to predict
 
 Models used in this program:
 
+- train_test_split
 - KNeighborsClassifier
 
 Libraries used in this program:
@@ -11,4 +12,3 @@ Libraries used in this program:
 - pandas
 - numpy
 - matplotlib
-- train_test_split
