@@ -1,4 +1,4 @@
-# In this program, we use Naive Bayes on several datasets. Using the accuracy scores, we find out which datasets are harder to distinguish.
+# In this program, we use a Naive Bayes classifier to create a model for distinguishing emails based on their topics.
 
 from sklearn.datasets import fetch_20newsgroups
 from sklearn.naive_bayes import MultinomialNB
