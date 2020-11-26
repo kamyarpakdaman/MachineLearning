@@ -1,4 +1,4 @@
-# In this program, we will create a K-nearest Neighbors model to predict the diagnosis label
+# In this program, we will create a K-nearest Neighbors moel to predict the diagnosis label
 # for breast cancer tumors.
 
 import numpy as np
@@ -120,7 +120,7 @@ def accuracy_plot():
         plt.gca().text(bar.get_x() + bar.get_width()/2, height*.90, '{0:.{1}f}'.format(height, 2), 
                      ha='center', color='w', fontsize=11)
 
-    plt.tick_params(top='off', bottom='off', left='off', right='off', labelleft='off', labelbottom='on')
+    plt.tick_params(top = False, bottom = False, left = False, right = False, labelleft = False, labelbottom = True)
 
     for spine in plt.gca().spines.values():
         spine.set_visible(False)
@@ -141,7 +141,6 @@ mean_prediction()
 test_prediction()
 model_accuracy()
 accuracy_plot()
-
 
 print('\nThanks for reviewing')
 
