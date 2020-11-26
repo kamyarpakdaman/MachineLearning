@@ -57,6 +57,7 @@ ax.spines['right'].set_visible(False)
 ax.set_xticks(max_depth_values)
 ax.set_xticklabels(max_depth_values)
 ax.tick_params(left = False, top = False, right = False, bottom = False)
+# plt.savefig('result_1.png')
 
 plt.show()
 
@@ -100,10 +101,9 @@ ax.spines['right'].set_visible(False)
 ax.set_xticks(max_depth_values)
 ax.set_xticklabels(max_depth_values)
 ax.tick_params(left = False, top = False, right = False, bottom = False)
+# plt.savefig('result_2.png')
 
 plt.show()
-
-# Here we see a clear improvement of around 20%.
 
 print('\nThanks for reviewing')
 
