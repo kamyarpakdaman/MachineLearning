@@ -1,10 +1,12 @@
 # In this program, we use a Naive Bayes classifier to create a model for distinguishing emails based on their topics.
+# Note that this program requires downloading the datasets.
 
 from sklearn.datasets import fetch_20newsgroups
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.feature_extraction.text import CountVectorizer
 
-# Loading the data. Note that emails are stored in a list called emails.data and labels can be found in the list emails.target. Labels are numbers, and their corresponding names can be found at emails.target_names.
+# Loading the data. Note that emails are stored in a list called emails.data and labels can be found in the list emails.target. Labels are numbers, 
+# and their corresponding names can be found at emails.target_names.
 
 emails = fetch_20newsgroups(categories = ['rec.sport.baseball', 'rec.sport.hockey'])
 
@@ -29,7 +31,8 @@ clf.fit(train_counts, train_emails.target)
 
 print(clf.score(train_counts, train_emails.target))
 
-# As of the 0.9974 accuracy, we can conclude that our model does a good job distinguishing between baseball and hockey emails. Note that, at the beginning, we chose two email datasets of baseball and hockey, each email in each category having its corresponding label.
+# As of the 0.9974 accuracy, we can conclude that our model does a good job distinguishing between baseball and hockey emails. Note that, 
+# at the beginning, we chose two email datasets of baseball and hockey, each email in each category having its corresponding label.
 
 print('\nThanks for reviewing')
 
