@@ -10,7 +10,7 @@ import pandas as pd
 
 # 1. We want to know what percentage of the observations in the dataset are instances of fraud?
 
-def answer_one():
+def func_one():
     
     df = pd.read_csv('fraud_data.csv')
     classes = df['Class'].value_counts()
@@ -35,7 +35,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0)
 # 2. Training a dummy classifier that classifies everything as the majority class of the training data. We want to know 
 # what is the accuracy of this classifier? What is the recall?
 
-def answer_two():
+def func_two():
 
     from sklearn.dummy import DummyClassifier
     from sklearn.metrics import recall_score
@@ -51,7 +51,7 @@ def answer_two():
 # 3. Training a SVC classifer using the default parameters. we want to know what is the accuracy, recall, and precision 
 # of this classifier?
 
-def answer_three():
+def func_three():
 
     from sklearn.metrics import recall_score, precision_score
     from sklearn.svm import SVC
@@ -68,7 +68,7 @@ def answer_three():
 # 4. Using the SVC classifier with parameters `{'C': 1e9, 'gamma': 1e-07}`, we want to know what is the confusion matrix 
 # when using a threshold of -220 on the decision function.
 
-def answer_four():
+def func_four():
 
     from sklearn.metrics import confusion_matrix
     from sklearn.svm import SVC
@@ -88,7 +88,7 @@ def answer_four():
 # Looking at the precision-recall curve, we want to know what is the recall when the precision is 0.75?
 # Looking at the roc curve, we want to know what is the true positive rate when the false positive rate is 0.16?
 
-def answer_five():
+def func_five():
         
     from sklearn.linear_model import LogisticRegression
     from sklearn.metrics import roc_curve, precision_recall_curve
@@ -132,7 +132,7 @@ def answer_five():
     plt.subplots_adjust(wspace = 0.3)
     plt.show()
     
-    return (0.82499999999999996, 0.94999999999999996)
+    return (0.82, 0.94)
 
 
 # 6. We perform a grid search over the parameters listed below for a Logisitic Regression classifier, using recall for 
@@ -142,7 +142,7 @@ def answer_five():
 # 
 # From `.cv_results_`, create an array of the mean test scores of each parameter combination. i.e.
 
-def answer_six():  
+def func_six():  
 
     from sklearn.model_selection import GridSearchCV
     from sklearn.linear_model import LogisticRegression
